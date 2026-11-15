@@ -55,12 +55,12 @@ button:disabled{opacity:.45;cursor:not-allowed}
       <li><b>Nome:</b> Luis.</li>
       <li><b>Qualidades:</b> faço a Nay rir, aguento ela estar sempre certa e sei a hora de ficar quieto.</li>
       <li><b>Defeitos:</b> piadas ruins e fé demais no meu senso de humor.</li>
-      <li><b>Patrimônio:</b> um coração enorme e um celular com 12% de bateria.</li>
+      <li><b>Patrimônio:</b> um coração enorme e um celular com 15% de bateria.</li>
       <li><b>Promessa:</b> sempre serei o maior fã dela.</li>
     </ul>
     <div class="cert">
       <p><b>Previsão do casal: 10/10 💘</b></p>
-      <p>Os aniversários provam: o meu é 18/05 e o da Nay é 08/05. Dias subtraídos: 18 − 8 = 10. Meses somados: 5 + 5 = 10. Resultado: 10/10, casal nota máxima.</p>
+      <p>O Destino prova: Sendo de exatas, meu niver é 18/05 e o da Nay é 08/05. Dias subtraídos: 18 − 8 = 10. Meses somados: 5 + 5 = 10. Resultado: 10/10, casal nota máxima.</p>
     </div>
     <button id="toVote">Ir para a votação</button>
   </section>
@@ -109,7 +109,7 @@ button:disabled{opacity:.45;cursor:not-allowed}
 const $ = id => document.getElementById(id);
 const SCREENS = ["intro","cv","vote","sign","check","done"];
 const show = id => SCREENS.forEach(s => $(s).hidden = s !== id);
-const msgs = ["Tem certeza? A Nay pode estar olhando 👀","Pensa direitinho…","Esse botão não vai te ajudar","Estou suando aqui","Quase, tenta de novo","Lembra do currículo, foi feito com carinho","Vai, libera!"];
+const msgs = ["Tem certeza? A Nay pode tá olhando 👀","Pensa direitinho…","Esse botão não vai te ajudar","Tô suando aqui","Quase, tenta de novo","Lembra do currículo, foi feito com carinho","Vai, libera!"];
 let tries = 0, swapped = false;
 
 $("start").onclick = () => show("cv");
@@ -151,7 +151,7 @@ $("signBtn").onclick = () => {
   const fill = $("fill"), t = $("chk");
   setTimeout(() => fill.style.width = "99%", 50);
   setTimeout(() => t.textContent = "Consultando o advogado da Nay…", 1700);
-  setTimeout(() => t.textContent = "Travou em 99%: estou suando de nervoso 😅", 3200);
+  setTimeout(() => t.textContent = "Travou em 99%: Tô suando de nervoso já 😅", 3200);
   setTimeout(() => { t.textContent = "Brincadeira, aprovado! 😏"; fill.style.width = "100%"; }, 5000);
   setTimeout(() => { show("done"); hearts(); fanfare(); }, 6400);
 };
